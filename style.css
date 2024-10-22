@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #1d1d1d;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5200;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ff5200;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #0f0f0f;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-content .highlight {
+    font-style: italic;
+    font-family: 'Cursive';
+    color: #ff5200;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #cfcfcf;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.join-btn {
+    background-color: #ff5200;
+    color: white;
+    margin-right: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.download-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-image img {
+    width: 400px;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    bottom: 150px;
+    left: 1000px;
+}
+.stats-1{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    margin-left: 1300px;
+}
+
+.stat-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-box p {
+    font-size: 24px;
+    color: #ff5200;
+}
+
+.stat-box span {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+/* Change Your Habits Section */
+.change-habits {
+    padding: 60px;
+    text-align: center;
+    background-color: #121212;
+}
+
+.change-habits h2 {
+    font-size: 36px;
+}
+
+.habits-grid {
+    display: flex;
+    justify-content: center;
+    border: #ff5200;
+}
+
+.habit-grid-images{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.extra-mile{
+    display: flex;
+    max-width: 1200px;
+    gap: 100px;
+    margin-top: 100px;
+    background-color: #353333;
+    margin-left: 200px;
+    padding: 20px;
+    
+}
+.extra-mile-image{
+    width: 100%; /* Or any percentage or fixed size */
+    max-width: 300px; /* Maximum width of the image */
+    height: 300px;
+}
+
+.trainings{
+ margin-left: 250px;
+ margin-top: 100px;
+}
+.ex-img{
+    height:230px;
+    width: 350px;
+}
+.bmi-calculator{
+    padding: 60px;
+    text-align: center;
+    background-color: #121212;
+}
+.bmi-grid{
+    display: flex;
+    gap: 200px;
+    margin-left: 350px;
+}
+.relative-1{
+    position: relative;
+    bottom: 400px;
+    left: 40px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+.relative-2{
+    position: relative;
+    bottom: 400px;
+    left: 400px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+.relative-3{
+    position: relative;
+    bottom: 400px;
+    left: 890px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+.relative-4{
+    position: relative;
+    bottom: 200px;
+    left: 890px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+.relative-5{
+    position: relative;
+    bottom: 200px;
+    left: 490px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+.relative-6{
+    position: relative;
+    bottom: 200px;
+    left: 190px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+/* For screens 768px and above (Tablets) */
+@media screen and (max-width: 768px) {
+    nav ul {
+       position: relative; 
+       left: 100px; 
+    }
+
+    .hero {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+        background-color: #0f0f0f;
+        position: relative;
+    }
+    .download-btn {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        font-size: 12px;
+    }
+    .join-btn {
+        background-color: #ff5200;
+        color: white;
+        margin-right: 20px;
+        border-radius: 30px;
+        text-decoration: none;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .cta-buttons {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        width: 400px;
+    }
+
+    .stats {
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        position: absolute;
+    }
+
+    .extra-mile {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .bmi-grid {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .habit-grid-images{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+}
+
+
+
